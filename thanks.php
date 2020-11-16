@@ -11,12 +11,12 @@
   <title>送信完了</title>
 </head>
 <body>
-  <h1>コメントありがとうございます！</h1>
+  <h1>お問い合わせありがとうございます！</h1>
   <div>
     <h3>入力内容</h3>
-    <p>名前:<?php echo $name; ?></p>
+    <p>お名前:<?php echo $name; ?></p>
     <p>メールアドレス:<?php echo $email; ?></p>
-    <p>コメント内容:<?php echo $comment; ?></p>
+    <p>お問い合わせ内容:<?php echo $comment; ?></p>
   </div>
 </body>
 </html>

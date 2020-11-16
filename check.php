@@ -6,7 +6,7 @@
 
   // name
   if ($name == '') {
-    $name_result = '名前が入力されていません。';
+    $name_result = 'お名前が入力されていません。';
   } else {
     $name_result = 'ようこそ' . $name . '様';
   }
@@ -18,9 +18,9 @@
   }
   // comment
   if ($comment == '') {
-    $comment_result = 'コメントが入力されていません。';
+    $comment_result = 'お問い合わせ内容が入力されていません。';
   } else {
-    $comment_result = '入力内容：' . $comment;
+    $comment_result = 'お問い合わせ内容：' . $comment;
   }
 ?>
 <!DOCTYPE html>
