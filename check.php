@@ -29,21 +29,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>入力内容確認</title>
+  <link rel="stylesheet" href="./assets/css/check.css">
 </head>
 <body>
-  <h1>入力内容確認</h1>
-  <p><?php echo $name_result; ?></p>
-  <p> <?php echo $email_result; ?> </p>
-  <p> <?php echo $comment_result; ?> </p>
-  <form method="POST" action="thanks.php">
-    <input type="hidden" name="name" value="<?php echo $name; ?>">
-    <input type="hidden" name="email" value="<?php echo $email; ?>">
-    <input type="hidden" name="comment" value="<?php echo $comment; ?>">
-
-    <input type="button" value="戻る" onclick="history.back()">
-    <?php if ($name != '' && $email != '' && $comment != ''): ?>
-      <input type="submit" value="OK" >
-    <?php endif; ?>
-  </form>
+  <div class="check">
+    <div class="check-upper">
+      <h1>入力内容確認</h1>
+      <p><?php echo $name_result; ?></p>
+      <p> <?php echo $email_result; ?> </p>
+      <p> <?php echo $comment_result; ?> </p>
+    </div>
+    <div class="check-bottom">
+      <form method="POST" action="thanks.php">
+        <input type="hidden" name="name" value="<?php echo $name; ?>">
+        <input type="hidden" name="email" value="<?php echo $email; ?>">
+        <input type="hidden" name="comment" value="<?php echo $comment; ?>">
+        <input class="back" type="button" value="戻る" onclick="history.back()">
+        <?php if ($name != '' && $email != '' && $comment != ''): ?>
+          <input class="ok" type="submit" value="OK" >
+        <?php endif; ?>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

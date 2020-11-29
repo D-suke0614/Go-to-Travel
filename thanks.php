@@ -28,15 +28,17 @@
   <link rel="stylesheet" href="./assets/css/thanks.css">
 </head>
 <body>
-  <h1>お問い合わせありがとうございます！</h1>
-  <div>
-    <h3>入力内容</h3>
-    <p>お名前:<?php echo $name; ?></p>
-    <p>メールアドレス:<?php echo $email; ?></p>
-    <p>お問い合わせ内容:<?php echo $comment; ?></p>
-  </div>
-  <div>
-  <a class="to-top-page" href="./index.html">トップページに戻る</a>
+  <div class="thanks">
+    <h1>お問い合わせありがとうございます！</h1>
+    <div class="concents">
+      <h3>入力内容</h3>
+      <p>お名前 : <?php echo $name; ?></p>
+      <p>メールアドレス : <?php echo $email; ?></p>
+      <p>お問い合わせ内容 : <?php echo $comment; ?></p>
+    </div>
+    <div>
+    <a class="to-top-page" href="./index.html">トップページに戻る</a>
+    </div>
   </div>
 </body>
 </html>

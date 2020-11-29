@@ -3,21 +3,47 @@
   padding: 0;
 }
 
-h1 {
+.thanks {
+  height: 65vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 1px solid black;
 }
 
+h1 {
+  font-size: 50px;
+}
 
-div {
-  text-align: center;
-  margin-top: 50px;
+.concents {
+  font-size: 20px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 .to-top-page {
+  border: 2px solid gray;
   text-decoration: none;
+  font-weight: bold;
   color: black;
-  border: 1px solid black;
-  padding: 5px;
-  margin-top: 50px;
+  background-color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.3%;
+  padding-bottom: 1.2%;
+}
+
+.to-top-page:hover {
+  color: white;
+  background-color: black;
 }
