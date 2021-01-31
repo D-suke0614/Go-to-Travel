@@ -103,7 +103,7 @@
     <div class="contact-left">
       <h1>CONTACT ME</h1>
       <p>お気軽にお問い合わせください</p>
-      <p>Please feel free to contact us</p>
+      <p>Please feel free to contact me</p>
     </div>
     <div class="contact-right">
       <h1>お問い合わせ情報入力</h1>
