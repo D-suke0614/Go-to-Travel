@@ -37,7 +37,7 @@
       <p>お問い合わせ内容 : <?php echo $comment; ?></p>
     </div>
     <div>
-    <a class="to-top-page" href="./index.html">トップページに戻る</a>
+    <a class="to-top-page" href="./index.php">トップページに戻る</a>
     </div>
   </div>
 </body>
