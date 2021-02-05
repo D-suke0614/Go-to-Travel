@@ -2,6 +2,8 @@
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $comment = htmlspecialchars($_POST['comment']);
+    date_default_timezone_set('Asia/Tokyo');
+    $currentTime = date("Y/m/d H:i:s");
 
     // データベース接続
     $dsn = 'mysql:dbname=go_to_travel;host=localhost';
@@ -11,7 +13,7 @@
     $dbh->query('SET NAMES utf8');
 
     // SQL実行
-    $sql = 'INSERT INTO `contact`(`name`, `email`, `comment`) VALUES ("'. $name.'", "'.$email.'", "'.$comment.'")';
+    $sql = 'INSERT INTO `contact`(`name`, `email`, `comment`, `created`) VALUES ("'. $name.'", "'.$email.'", "'.$comment.'", "'. $currentTime.'")';
     $stmt = $dbh->prepare($sql);
     $stmt->execute();
 
