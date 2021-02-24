@@ -126,7 +126,7 @@
   </div>
   <div class="footer-bottom">
     <p>
-      © 2021 - Original Site All Rights Reserved.
+      © 2020 - Original Site All Rights Reserved.
     </p>
   </div>
 </footer>
